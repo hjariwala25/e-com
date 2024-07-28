@@ -13,7 +13,7 @@ useEffect(() => {
     const signal = controller.signal;
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("http://localhost:8080/items", {signal})
+    fetch(`${import.meta.env.API_ENDPOINT}/items`, {signal})
     .then((res) => res.json())
     .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());
