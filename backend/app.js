@@ -14,6 +14,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("Health check : Good");
+})
+
 app.get('/items', async (req, res) => {
   const storedItems = await getStoredItems();
   await new Promise((resolve, reject) => setTimeout(() => resolve(), 2000));
