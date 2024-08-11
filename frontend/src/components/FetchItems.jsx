@@ -12,6 +12,7 @@ useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
 
+    // Fetch Data
     dispatch(fetchStatusActions.markFetchingStarted());
     fetch(`${import.meta.env.API_ENDPOINT}/items`, {signal})
     .then((res) => res.json())
