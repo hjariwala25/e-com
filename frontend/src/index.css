@@ -15,7 +15,7 @@ header {
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   position: sticky;
   z-index: 999;
-  top: 0px;
+  top: 0px; 
 }
 
 .home {
@@ -469,22 +469,30 @@ a.action-container {
   header {
     flex-wrap: wrap;
     height: auto;
+    margin: 0;
+  }
+  .home {
+    height: 55px;
+    margin: 0;
+    
   }
   .logo_container, .action_bar {
     margin: 0;
+
     /* align-items: center; */
     /* flex-direction: row; */
-    /* display: flex; */
+    display: flex;
     width: 100%;
-    /* justify-content: center; */
-    /* justify-content: space-evenly;  */
-    padding: 10px;
+    justify-content: center;
+    justify-content: space-evenly; 
+    padding: 0;
   }
   .nav_bar {
-    flex-direction: column;
+    /* flex-direction: column; */
     min-width: 0;
+    justify-content: space-around;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
   }
   .nav_bar a {
     margin: 10px 0;
