@@ -13,11 +13,11 @@ const bag = useSelector(store => store.bag);
             <Link to="/"><img className="home" src="images/simplekart.png" alt="SimpleKart Home"/></Link>
         </div>
         <nav className="nav_bar">
-            <Link to="#">Home</Link>
-            <Link to="#">Clothing</Link>
-            <Link to="#">Electronics</Link>
-            <Link to="#">Health & Beauty</Link>
-            <Link to="#">Sports</Link>
+            <Link to="/">Home</Link>
+            <Link to="/">Clothing</Link>
+            <Link to="/">Electronics</Link>
+            <Link to="/">Health & Beauty</Link>
+            <Link to="/">Sports</Link>
             
         </nav>
         <div className="search_bar">
