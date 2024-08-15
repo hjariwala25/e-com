@@ -16,7 +16,7 @@ const bag = useSelector(store => store.bag);
             <Link to="/">Home</Link>
             <Link to="/">Clothing</Link>
             <Link to="/">Electronics</Link>
-            <Link to="/">Health & Beauty</Link>
+            <Link to="/">Beauty</Link>
             <Link to="/">Sports</Link>
             
         </nav>
