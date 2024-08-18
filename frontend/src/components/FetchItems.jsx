@@ -7,7 +7,7 @@ const FetchItems = () => {
   const fetchStatus = useSelector((store) => store.fetchStatus);
   const dispatch = useDispatch();
 
-  console.log(`${import.meta.env.VITE_SOME_KEY}/items`);
+
 
   useEffect(() => {
     if (fetchStatus.fetchDone) return;

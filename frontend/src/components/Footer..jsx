@@ -41,7 +41,7 @@ const Footer = () => {
         <hr/>
 
         <div className="copyright">
-            © 2023 www.simplekart.com. All rights reserved.
+            © 2024 www.simplekart.com. All rights reserved.
         </div>
     </footer>
  </>
