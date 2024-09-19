@@ -555,3 +555,178 @@ a.action-container {
     font-size: 20px;
   }
 }
+
+/* ... (keep existing styles) ... */
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode .nav_bar a {
+  color: #ffffff;
+}
+
+.dark-mode .search_bar,
+.dark-mode .search_input {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark-mode .item-container,
+.dark-mode .bag-item-container {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode .company-name,
+.dark-mode .item-name,
+.dark-mode .price,
+.dark-mode .current-price {
+  color: #ffffff;
+}
+
+.dark-mode .footer_container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .footer_column h3 {
+  color: #ffffff;
+}
+
+.dark-mode .footer_column a {
+  color: #b0b0b0;
+}
+
+.dark-mode .action-container,
+.dark-mode .theme-switcher {
+  color: #ffffff;
+}
+
+/* Theme switcher styles */
+.theme-switcher {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .logo_container {
+    order: 1;
+    width: 50%;
+  }
+
+  .menu-icon {
+    order: 2;
+    width: 50%;
+    text-align: right;
+  }
+
+  .search_bar {
+    order: 3;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .nav_bar {
+    order: 4;
+    width: 100%;
+    display: none;
+  }
+
+  .nav_bar.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action_bar {
+    order: 5;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .items-container {
+    width: 90%;
+    margin: 20px 5%;
+  }
+
+  .item-container {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .action_bar {
+    flex-wrap: wrap;
+  }
+
+  .action-container {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .item-container {
+    width: 100%;
+  }
+
+  .bag-page {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .bag-items-container,
+  .bag-summary {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Add a hamburger menu for mobile */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav_bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+
+  .dark-mode .nav_bar {
+    background-color: #1e1e1e;
+  }
+}
+
+/* Ensure dark mode applies to the entire page */
+.dark-mode #root {
+  background-color: #121212;
+  min-height: 100vh;
+}
