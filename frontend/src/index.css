@@ -568,6 +568,10 @@ a.action-container {
   border-bottom: 1px solid #333;
 }
 
+.dark-mode .menu-icon{
+  color: #ffffff;
+}
+
 .dark-mode .nav_bar a {
   color: #ffffff;
 }
@@ -630,15 +634,21 @@ a.action-container {
   }
 
   .menu-icon {
+    display: block;
     order: 2;
     width: 50%;
     text-align: right;
+    padding-right: 20px;
   }
 
   .search_bar {
     order: 3;
     width: 100%;
     margin: 10px 0;
+  }
+
+  .menu-icon svg{
+    fill: currentColor;
   }
 
   .nav_bar {
@@ -703,6 +713,7 @@ a.action-container {
   display: none;
   cursor: pointer;
   font-size: 24px;
+  color: #282c3f;
 }
 
 @media (max-width: 1024px) {
@@ -728,4 +739,13 @@ a.action-container {
 .dark-mode #root {
   background-color: #121212;
   min-height: 100vh;
+}
+
+.dark-mode .menu-icon:hover,
+.menu-icon:hover {
+  opacity: 0.8;
+}
+
+.menu-icon{
+  z-index: 1001;
 }
